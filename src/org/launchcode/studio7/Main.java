@@ -7,6 +7,17 @@ public class Main {
         // TODO: Declare and initialize a CD and a DVD object.
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
+        CD cd = new CD("Nevermind", 3400, "CD");
+        DVD dvd = new DVD("War", 5000,"DVD");
 
+        cd.spinDisc();
+        dvd.spinDisc();
+
+        cd.readData();
+        dvd.readData();
+
+        System.out.println(cd.getDiscInfo());
+        System.out.println(dvd.getDiscInfo());
     }
 }
+

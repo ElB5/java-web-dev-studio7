@@ -1,10 +1,21 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends Devices implements myInter {
+    public CD(String name, int storageCap, String discType) {
+        super(name, storageCap, discType);
+    }
 
-    // TODO: Implement your custom interface.
+    @Override
+    public void spinDisc() {
+        System.out.println("A CD spins at a rate of 23k rpm.");
+    }
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    @Override
+    public void readData() {
+        System.out.println("Would you like to plan a game?");
+    }
+
+
 
 }
+
